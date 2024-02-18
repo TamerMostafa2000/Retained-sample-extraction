@@ -11,6 +11,6 @@ Instrument printouts (hard copy) were scanned into a single PDF file with hunder
 I have used several open sorced librarie as pytesseract, pypdf, PIL and other libraries.
 
 First, I convert the pages into images.
-Then, I extract the texts from the images.
+Then, I extract the texts from the images after enhancing the qulity of the images.
 finally, I collected the data into a DataFrame then into CSV file.
 
