@@ -1,4 +1,4 @@
-# Retained-sample-extraction
+# Retained-Sample-Text-Extraction
 Python code for extracting texts from scanned PDF file of Sysmex CBC instrument printouts
 
 Retained samples refer to any portion of a patient's sample (blood, tissue, urine, etc.) that is set aside after the initial testing is complete. These samples are stored for a specific period under defined conditions for various purposes.
