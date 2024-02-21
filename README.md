@@ -7,13 +7,13 @@ One of these purposes is quality control to ensure the accuracy and reliability 
 The result of the retained samples are collected for farther calculations and statistics procedures.
 The challeng is to extract the data from hundereds of instrument printouts.
 In this project, we worked on retained samples results from 2 CBC instruments(Sysmex XN1000-1 and XN1000-2).
-The data are the CBC parameters(HB, HCT, MCV,MCH,MCHC,TLC,RBCs,PLTs) and printout data (instrument name,date and time).
+The data are the CBC parameters(HB, HCT, MCV,MCH,MCHC,TLC,RBCs,PLTs) and printout data (instrument name,date and time), (new_image_97.jpg) is an example.
 Instrument printouts (hard copy) were scanned into several PDF files with tens of pages.
 I have used several open sorced librarie as pytesseract, pypdf, PIL and other libraries.
 
 First, I mergrd the pdf fils into one single pdf file. After that, I convert the pages into images.
 Then, I extract the texts from the images after enhancing the qulity of the images.
-finally, I collected the data into a DataFrame then into a CSV file.
+finally, I collected the data into a DataFrame (new_image_97.jpg) then into a CSV file.
 
 This work needs more work to enhance the quality of the text extraction 
 
