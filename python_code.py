@@ -11,10 +11,20 @@ from pypdf import PdfReader
 
 pytesseract.pytesseract.tesseract_cmd=("C:\Program Files\Tesseract-OCR\\tesseract.exe")
 
+##Merging the pdf files into one file
+pdfs = ["E:\دتامر.pdf","E:\تامر.pdf"]
+
+merger = PdfMerger()
+
+for pdf in pdfs:
+    merger.append(pdf)
+
+merger.write("result.pdf")
+merger.close()
 ## First: converting pages in the scanned PDF file to images then saving the images
 
 # appending the pages of the scanned pdf into a list"page_list"
-pdf_reader = pypdf.PdfReader("E:\د تامر.pdf")
+pdf_reader = pypdf.PdfReader("result.pdf")
 page_list=[]
 for page in pdf_reader.pages:
     page_list.append(page)
@@ -23,7 +33,7 @@ for page in pdf_reader.pages:
 counter=0
 for i in page_list:
     i.images[0].image.save(f"E:\images\\new_image_{counter}.jpg", format="JPEG")
-    counter=1
+    counter=counter+1
 
 ## Second: Extracting the texts from the images
 '''
